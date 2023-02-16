@@ -1,0 +1,33 @@
+#wrapper,
+main,
+#content,
+#sidebar,
+aside,
+section{
+	@include box;
+}
+.layout {
+	@include box;
+	
+}
+body{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	color: $text;
+	
+}
+#wrapper{
+	display: flex;
+	@media (max-width:1075px){
+		display: block;
+	}
+	
+}
+main{
+
+	&.blur{
+	filter: blur(3px);
+	transition-duration: 1s;;
+}
+}
