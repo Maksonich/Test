@@ -1,0 +1,257 @@
+.info-hotel {
+    overflow: visible;
+    .layout {
+        display: flex;
+        justify-content: space-between;
+        overflow: visible;
+        @media(max-width:537px){
+          flex-direction: column-reverse;
+           width: 90%;
+          overflow: hidden;
+         }
+         @media(max-width:359px){
+          width: 98%;
+         }
+        .hotel {
+            margin-top: 23px;
+            .hotel-name-and-rating {
+                display: flex;
+                align-items: center;
+                @media(max-width:537px){
+                  justify-content: space-between;
+                 }
+                 @media(max-width:333px){
+                 flex-wrap: wrap;
+                 justify-content: center;
+                 }
+                h2{
+                    font-family: 'Trebuchet MS';
+                   
+                    font-weight: 700;
+                    font-size: 35px;
+                    line-height: 130%;
+                    @media(max-width:849px){
+                      font-size: 25px;
+                    }
+                    @media(max-width:655px){
+                      font-size: 18px;
+                    }
+                }
+                .grade-star {
+                  width: 147px;
+                  margin: 0 20px;
+                  @media(max-width:333px){
+                    margin: 20px;
+                    }
+                        .raiting {
+                            margin: 0;
+                            padding: 0;
+                            border: none;
+                          }
+                          
+                          .raiting__caption {
+                            padding: 0;
+                            margin-bottom: 8px;
+                          }
+                          
+                          .raiting__group {
+                            position: relative;
+                            width:137px;
+                            height: 27px;
+                            background-image: url(../images/icon/star-null.png);
+                            background-size: 27px 26px;
+                            
+                          }
+                          
+                          .raiting__group:focus-within { 
+                            outline: solid 1px #64686d0c;
+                            outline-offset: 0.1px;
+                          }
+                          
+                          .raiting__star {
+                            font-size: inherit;
+                            margin: 0;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width:137px;
+                            height: 27px;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            background-size: 27px 26px;
+                            background-repeat: repeat-x;
+                            cursor: pointer;
+                          }
+                          
+                          .raiting__star:focus {
+                            outline: none;
+                          }
+                          
+                          .raiting__star:hover, .raiting__star:checked {
+                            background-image: url(../images/icon/star.png);
+                          }
+                          
+                          .raiting__star:hover ~ .raiting__star {
+                            background-image: url(../images/icon/star-null.png);
+                          }
+                          
+                          .raiting__star:nth-of-type(1) {
+                            z-index: 5;
+                            width:27px;
+                          }
+                          
+                          .raiting__star:nth-of-type(2) {
+                            z-index: 4;
+                            width: 54px;
+                          }
+                          
+                          .raiting__star:nth-of-type(3) {
+                            z-index: 3;
+                            width: 81px;
+                          }
+                          
+                          .raiting__star:nth-of-type(4) {
+                            z-index: 2;
+                            width: 108px;
+                          }
+                          
+                          .raiting__star:nth-of-type(5) {
+                            z-index: 1;
+                            width: 138px;
+                          }
+                          
+                    
+                }
+                span{
+                    font-family: 'Trebuchet MS';
+                    font-weight: 700;
+                    font-size: 35px;
+                    line-height: 130%;
+                    @media(max-width:849px){
+                      font-size: 25px;
+                    }
+                    @media(max-width:655px){
+                     font-size: 15px;
+                    }
+                }
+               
+            }
+            ul.grade {
+                display: flex;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: center;
+                    font-family: 'Arial';
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    @media(max-width:849px){
+                      font-size: 10px;
+                    }
+                    @media(max-width:655px){
+                      font-size: 8px;
+                     }
+                    &:first-child{
+                        margin-right: 32px;
+                        @media(max-width:849px){
+                          margin-right: 20px;
+                        }
+                        @media(max-width:655px){
+                          margin-right: 8px;
+                         }
+                    }
+                    &:nth-child(2){
+                        margin-right: 32px;
+                        width: 52px;
+                        height: 52px;
+                        background-color: $colorHead;
+                        font-family: 'Trebuchet MS';
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 28px;
+                        color: $white;
+                        padding-left: 7px;
+                        @media(max-width:849px){
+                          font-size: 17px;
+                          padding-left: 13px;
+                          margin-right:20px ;
+                        }
+                        @media(max-width:655px){
+                          margin-right: 8px;
+                         }
+                    }
+                    margin-right: 16px;
+                    @media(max-width:849px){
+                      margin-right: 10px;
+                    }
+                    @media(max-width:655px){
+                      margin-right: 8px;
+                     }
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                    span{
+                     font-weight: 700;
+                    }
+                }
+            }
+        }
+        
+        .quantity-sun-day {
+          @media(max-width:537px){
+            text-align: center;
+           }
+            .quantity {
+                font-family: 'Trebuchet MS';
+                font-weight: 700;
+                font-size: 88px;
+                line-height: 102px;
+                color: $grey;
+                letter-spacing: -0.05em;
+                margin: -30px 110px 0 0;
+                @media(max-width:849px){
+                  font-size: 60px;
+                  margin: -30px 100px 0 0;
+                }
+                @media(max-width:849px){
+                  font-size: 60px;
+                  margin: -40px 80px 0 0;
+                  
+                }
+                @media(max-width:655px){
+                  font-size: 30px;
+                  margin: -20px 80px 0 0;
+                  line-height: 40px;
+                }
+                @media(max-width:537px){
+                  margin: 0;
+                  
+                 }
+            }
+            span{
+                display: block;
+                font-family: 'Arial';
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 31px;
+                 width: 144px;
+                 @media(max-width:849px){
+                  font-size: 20px;
+                  line-height: 25px;
+                  width: 100px;
+                }
+                @media(max-width:537px){
+                  width:auto ;
+                 }
+            }
+        }
+
+    }
+}
+
+
+
+

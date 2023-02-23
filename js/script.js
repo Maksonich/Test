@@ -1,7 +1,9 @@
 window.addEventListener("load", function (){
-    document.querySelector(".block-burger-menu").addEventListener("click", function (e){
-       document.querySelector(".block-burger-menu").classList.toggle("menu-active")
-       document.querySelector("header").classList.toggle("menu-burger-active")
-       document.querySelector("main").classList.toggle("blur")
+
+    document.querySelector(".burger").addEventListener("click", function(){
+        document.querySelector(".burger").classList.toggle("active-burger-menu")
+        document.querySelector("#wrapper").classList.toggle("no-scroll")
+        document.querySelector("header").classList.toggle("active-menu-burger")
     })
+    
 })

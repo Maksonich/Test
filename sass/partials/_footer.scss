@@ -1,0 +1,46 @@
+
+footer{
+    @include box;
+   
+   
+    .layout {
+        border-top: 1px solid #E0E0E0 ; 
+        padding: 24px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width:479px){
+           flex-direction: column;
+        }
+        h3{ 
+            display: block;
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 17px;
+            a{
+                color: $colorHead;
+                border-bottom: 1px solid rgba(0, 89, 172, 0.25);;
+            }
+        }
+        .social-icon {
+            display: flex;
+            @media (max-width:479px){
+                margin-top: 20px;
+             }
+        }
+        .facebook,
+        .telegram {
+            width: 32px;
+            height: 32px;
+            img{
+                display: block;
+            }
+        }
+        .facebook{
+            margin-right: 16px;
+        }
+         
+    }
+}

@@ -1,67 +1,9 @@
-@mixin box {
+@mixin box{
 	display: block;
-  position:relative;
+	position:relative;
 	box-sizing: border-box;
 	height: auto;
-  overflow: hidden;
-  @media (max-width:768px){
-		width: 100%
-	}
-  @media (max-width:587px){
-  overflow:visible;
-  }
-}
-@mixin activeElem{
-  background-color: $statusActive;
-  border: 1px solid $statusActiveBorder;
-  color: $statusActiveBorder;
-  border-radius: 4px;
-  padding: 4px 0px;
-  text-align: center;
-  width: 80px;
-height: 29px;
-  @media (max-width:619px){
-    padding: 1px 0px;
-    width: 60px;
-    height: 24px;
-  }
-}
-@mixin inactiveElem{
-  background-color: $statusInactive;
-  border: 1px solid $statusInactiveBorder;
-  color: $statusInactiveBorder;
-  border-radius: 4px;
-  padding: 4px 0px;
-  text-align: center;
-  width: 80px;
-  height: 29px;
-  @media (max-width:619px){
-    padding: 1px 0px;
-    width: 60px;
-    height: 24px;
-  }
+	overflow: hidden;
 }
 
-@mixin paginationItem{
-    font-size: 12px;
-    line-height: 100%;
-   text-align: center;
-   padding: 6px 0;
-    border-radius: 4px;
-    width: 25px;
-    height: 24px;
-    background-color: rgba(238, 238, 238, 1);
-    @media (max-width:619px){
-      font-size: 8px;
-      padding: 9px 0;
-    }
-   
-    &.active-page{
-      background: $paginationActiveBackground ;
-      a{
-        color: rgba(255, 255, 255, 1);
-      } 
-    }
-  
-  }
 

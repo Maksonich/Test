@@ -1,0 +1,161 @@
+.more-info {
+    margin-top: 64px;
+    .layout {
+        display: flex;
+        align-items: center;
+        @media (max-width:911px){
+            flex-direction: column;
+         }
+        .info {
+            width: 776px;
+            font-family: 'Arial';
+            @media (max-width:805px){
+                width: 98%;
+             }
+            h3{
+                font-family: 'Trebuchet MS';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 130%;
+                    @media (max-width:577px){
+                        text-align: center;
+                        font-size: 25px;
+                        line-height: 110%;
+                     }
+            }
+            .par1{
+                margin-top: 32px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 19px;
+                @media (max-width:577px){
+                    font-size: 13px;
+                }
+            }
+            .par2{
+                margin-top: 15px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                @media (max-width:577px){
+                    font-size: 13px;
+                }
+            }
+            h4{
+                margin: 24px 0 8px;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 130%;
+                @media (max-width:577px){
+                    font-size: 16px;
+                }
+            }
+            .par3{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                @media (max-width:577px){
+                    font-size: 13px;
+                }
+            }
+            .par4{
+                position: relative;
+                margin: 33px 0 33px 40px;
+               i{
+                font-style: italic;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                @media (max-width:577px){
+                    font-size: 13px;
+                }
+              
+             
+                } 
+                &::before{
+                    content: ('');
+                    width: 8px;
+                    height: 96px;
+                    background-color: $colorHead;
+                    position: absolute;
+                    top: -10px;left: -24px;
+                    @media (max-width:805px){
+                        height: 115%;
+                     }
+
+                }
+            }
+            .par5{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                @media (max-width:577px){
+                    font-size: 13px;
+                }
+            }
+            h5{
+                margin: 24px 0 8px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 130%;
+                @media (max-width:577px){
+                    font-size: 14px;
+                }
+              }
+            .par6{
+                
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                @media (max-width:577px){
+                    font-size: 13px;
+                }
+            }
+        }
+        aside{
+            width: 227px;
+            margin-left: 37px;
+            @media (max-width:577px){
+                margin: 20px 0;
+            }
+            .num {
+                font-family: 'Trebuchet MS';
+              
+                font-weight: 700;
+                font-size: 100px;
+                line-height: 116px;
+                color: grey;
+                @media (max-width:577px){
+                   font-size: 60px;
+                    line-height: 70px;
+                 }
+            }
+            .sub {
+                margin: 4px 0 8px;
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 31px;
+                @media (max-width:577px){
+                    font-size: 23px;
+                    
+                  }
+            }
+            span{
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+                color: $grey;
+                @media (max-width:577px){
+                    font-size: 16px;
+                  }
+            }
+        }
+    }
+    
+}
+
